@@ -1,4 +1,5 @@
 import { useState, SyntheticEvent  } from 'react';
+import api from '../services/api'
 
 export default function LoginCoffeeShop() {
   const [email, setEmail] = useState('');
@@ -8,8 +9,16 @@ export default function LoginCoffeeShop() {
   function handleSubmit (event: SyntheticEvent) {
     event.preventDefault();
 
-    console.log(email)
-    console.log(password)
+    api.post('sessions/coffeeshop', {
+      email: email,
+      password: password,
+    })
+    .then(() => {
+      console.log('Deu bom:)')
+    })
+    .catch(() => {
+      console.log('Deu ruim :(')
+    });
   }
 
   return (
