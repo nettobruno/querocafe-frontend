@@ -8,6 +8,7 @@ export default function LoginCoffeeShop() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [cpf, setCpf] = useState('');
+  const [country, setCountry] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
@@ -21,6 +22,7 @@ export default function LoginCoffeeShop() {
       name: name,
       email: email,
       cpf: cpf,
+      country: country,
       password: password,
       confirmPassword: confirmPassword
     })
@@ -46,6 +48,7 @@ export default function LoginCoffeeShop() {
           <input type="text" name="name" placeholder="Nome da cafeteria" value={name} onChange={(e) => setName(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none" />
           <input type="email" name="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none" />
           <input type="text" name="cpf" placeholder="CPF ou CNPJ" value={cpf} onChange={(e) => setCpf(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none" />
+          <input type="text" name="country" placeholder="País" value={country} onChange={(e) => setCountry(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none" />
           <input type="password" name="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none	" />
           <input type="password" name="confirmPassword" placeholder="Confirmar Senha" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none	" />
 
