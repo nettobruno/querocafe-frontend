@@ -37,7 +37,7 @@ export default function LoginCoffeeShop() {
   return (
     <div className="min-h-screen bg-blue-400 flex justify-center items-center p-5">
       <div className="w-full max-w-[550px] bg-white rounded p-5 lg:p-20 flex flex-col">
-        <h1 className='text-center text-blue-600 font-bold text-4xl mb-10'>Cadastro da Cafeteria</h1>
+        <h1 className='text-center text-blue-600 font-bold text-4xl mb-10'>Cadastro Cafeteria</h1>
         <form onSubmit={handleSubmit} className="flex flex-col">
           <label htmlFor="logoFile" className="text-gray-500 font-bold">Logo da cafeteria</label>
           <input type="file" name="logoFile" value={logoFile} onChange={(e) => setLogoFile(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none" />
@@ -52,7 +52,7 @@ export default function LoginCoffeeShop() {
           <input type="password" name="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none	" />
           <input type="password" name="confirmPassword" placeholder="Confirmar Senha" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none	" />
 
-          <button type="submit" className="bg-blue-600 rounded p-2 text-white font-bold mt-4 mb-4">Entrar</button>
+          <button type="submit" className="bg-blue-600 rounded p-2 text-white font-bold mt-4 mb-4 hover:bg-blue-700">Cadastrar</button>
         </form>
         <Link to='/' className="text-center text-gray-400">Já tem uma conta? <span className='font-bold hover:underline'>Entrar</span></Link>
       </div>

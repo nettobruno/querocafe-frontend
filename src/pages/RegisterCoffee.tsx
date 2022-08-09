@@ -69,7 +69,7 @@ export default function LoginCoffeeShop() {
           <input type="text" name="punctuation" placeholder="Pontuação" value={punctuation} onChange={(e) => setPunctuation(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none	" />
           <input type="text" name="description" placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none	" />
 
-          <button type="submit" className="bg-blue-600 rounded p-2 text-white font-bold mt-4 mb-4">Cadastrar Café</button>
+          <button type="submit" className="bg-blue-600 rounded p-2 text-white font-bold mt-4 mb-4 hover:bg-blue-700">Cadastrar Café</button>
         </form>
       </div>
     </div>

@@ -30,7 +30,7 @@ export default function LoginCoffeeShop() {
           <input type="email" name="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none" />
           <input type="password" name="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} className="bg-gray-200 text-gray-500 p-2 rounded mb-4 outline-none	" />
 
-          <button type="submit" className="bg-blue-600 rounded p-2 text-white font-bold mt-4 mb-4">Entrar</button>
+          <button type="submit" className="bg-blue-600 rounded p-2 text-white font-bold mt-4 mb-4 hover:bg-blue-700">Entrar</button>
         </form>
         <Link to='/registercoffeeshop' className="text-center text-gray-400">Ainda não tem uma conta? <span className='font-bold hover:underline'>Criar</span></Link>
       </div>
